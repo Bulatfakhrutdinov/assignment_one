@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="text" id="search" placeholder="Search by title..." onkeyup="filterMovies()">
+    <table>
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Title</th>
+                <th onclick="sortTable(1)">Release Year</th>
+                <th onclick="sortTable(2)">Director</th>
+                <th onclick="sortTable(3)">Box Office</th>
+                <th onclick="sortTable(4)">Country</th>
+            </tr>
+        </thead>
+        <tbody id="movieTable">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
